@@ -1,3 +1,4 @@
+import 'package:dear_programmer_foodapp/Screens/OrderScreen.dart';
 import 'package:flutter/material.dart';
 import '../Constants/AnotherReusableContainer.dart';
 import '../Constants/LastReusableContainer.dart';
@@ -65,6 +66,7 @@ class HomePage extends StatelessWidget {
       floatingActionButton: InkWell(
         onTap: (){
 
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>OrderScreen()));
         },
         child: Container(
           height: 50,

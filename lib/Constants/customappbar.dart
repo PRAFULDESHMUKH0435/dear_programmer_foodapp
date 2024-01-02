@@ -1,6 +1,6 @@
+import 'package:dear_programmer_foodapp/Screens/WishListScreen.dart';
 import 'package:flutter/material.dart';
 
-import 'MyDrawer.dart';
 class MyCustomAppBar extends StatelessWidget {
   const MyCustomAppBar({super.key});
 
@@ -21,10 +21,15 @@ class MyCustomAppBar extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            child: CircleAvatar(
-              radius: 20,
-              child: Icon(Icons.notifications),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>WishListScreen()));
+            },
+            child: Container(
+              child: CircleAvatar(
+                radius: 20,
+                child: Icon(Icons.notifications),
+              ),
             ),
           ),
 

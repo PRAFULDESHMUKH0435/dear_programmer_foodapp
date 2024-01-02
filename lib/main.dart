@@ -1,4 +1,3 @@
-import 'package:dear_programmer_foodapp/Screens/DetailedScreen.dart';
 import 'package:dear_programmer_foodapp/Screens/homepage.dart';
 import 'package:flutter/material.dart';
 void main(){
